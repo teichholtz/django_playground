@@ -43,6 +43,13 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-8">
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+              {{ message  }}
+          </div>
+         {% endfor %}
+      {% endif %}
       {% block content %}{% endblock %}
     </div>
     <div class="col-md-4">
@@ -62,6 +69,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <p> so now both home and about will have this </p>
+
 </body>
 </html>

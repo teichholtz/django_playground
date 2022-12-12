@@ -17,7 +17,8 @@ def about(request):
 
 def register(request):
 
-    return HttpResponse('<h1>Blog Register</h1>')
+    return render(request, "blog/register.html")
+
 
 def profile(request):
 

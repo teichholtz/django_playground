@@ -123,3 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+#
+# this needed for Django 3.2
+#
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

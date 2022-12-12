@@ -21,7 +21,7 @@ urlpatterns = [
     path("", include('blog.urls')),
     path('frap/', include ('blog.urls')),
     path('admin/', admin.site.urls),
-    path('register/', user_views.register, name='register'),
+    # path('register/', user_views.register, name='register'),
     path('blog/', include('blog.urls')),
     path('contractor/', include('contractor.urls')),
 ]
